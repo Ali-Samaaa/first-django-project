@@ -6,6 +6,4 @@ def home_page(request):
 
 
 def say_hello(request):
-    return render(request, 'hello.html')
-
-
+    return render(request, 'hello.html', context={'name': 'jack'})
